@@ -1,35 +1,27 @@
-// Seleccionamos el formulario de registro
 const signupForm = document.querySelector('#signupForm');
-
-// Agregamos un evento de escucha al formulario cuando se envía
 signupForm.addEventListener('submit', (e) => {
-    e.preventDefault(); // Evitamos que el formulario se envíe de forma predeterminada
+    e.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
 
-    // Obtenemos los valores de nombre, email y contraseña ingresados por el usuario
+    // Obtiene los valores de los campos de entrada
     const name = document.querySelector('#name').value;
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
 
-    // Obtenemos la lista de usuarios almacenada en el LocalStorage o una lista vacía si no existe
+    // Obtiene los usuarios almacenados en el almacenamiento local o crea un array vacío si no hay usuarios almacenados
     const Users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Verificamos si el usuario ya está registrado buscando su email en la lista de usuarios
+    // Comprueba si el usuario ya está registrado por su dirección de correo electrónico
     const isUserRegistered = Users.find(user => user.email === email);
-
-    // Si el usuario ya está registrado, mostramos una alerta indicando que el usuario ya existe
     if (isUserRegistered) {
-        return alert('El usuario ya está registrado!');
+        return alert('¡El usuario ya está registrado!'); // Muestra una alerta si el usuario ya está registrado
     }
 
-    // Si el usuario no está registrado, agregamos los datos del usuario a la lista de usuarios
+    // Agrega un nuevo usuario al array de usuarios
     Users.push({ name: name, email: email, password: password });
 
-    // Almacenamos la lista actualizada de usuarios en el LocalStorage
+    // Almacena el array de usuarios actualizado en el almacenamiento local
     localStorage.setItem('users', JSON.stringify(Users));
 
-    // Mostramos una alerta indicando que el registro fue exitoso
-    alert('¡Registro exitoso!');
-
-    // Redireccionamos al usuario a la página de inicio de sesión (login.html)
-    window.location.href = 'login.html';
+    alert('¡Registro Exitoso!'); // Muestra una alerta de registro exitoso
+    window.location.href = 'login.html'; // Redirige al usuario a la página de inicio de sesión
 });
