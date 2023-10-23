@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header class="navbar-container">
+        <div class="nav">
+            <div class="logo">compraYA!</div> <!-- Logotipo -->
+            <ul class="menu">
+                <li><a href="/index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="/index.html#productos">Productos</a></li>
+                <!-- Enlace a la sección de productos en la página de inicio -->
+                <li><a href="#">Contacto</a></li> <!-- Enlace a la página de contacto -->
+                <li><a href="/login.html">Iniciar Sesion</a></li> <!-- Enlace a la página de inicio de sesión -->
+                <li><a href="/registro.html">Registarse</a></li> <!-- Enlace a la página de registro -->
+            </ul>
+        </div>
+        <section>
+            <h2>Iniciar Sesion</h2> <!-- Encabezado de la sección -->
+            <form id="loginForm"> <!-- Formulario de inicio de sesión -->
+                <label>Correo Electronico</label> <!-- Etiqueta para el campo de correo electrónico -->
+                <input type="email" placeholder="..." id="email" required autofocus>
+                <!-- Campo de entrada de correo electrónico -->
+                <label>Contraseña</label> <!-- Etiqueta para el campo de contraseña -->
+                <input type="password" placeholder="..." id="password" required> <!-- Campo de entrada de contraseña -->
+                <input type="submit" value="Ingresar"> <!-- Botón de envío del formulario -->
+            </form>
+            <p>¿No tienes una cuenta? <a href="/registro.html">Registro</a></p><!-- Texto con enlace a la página de registro -->
+        </section>
+    </header>
+    <script src="/assets/js/login.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</body>
+
+</html>

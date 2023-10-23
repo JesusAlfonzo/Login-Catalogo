@@ -1,0 +1,144 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Establece la fuente predeterminada para el documento */
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    /* Define una variable CSS para la transición */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Establece el margen y el relleno en 0 y la propiedad 
+    box-sizing en border-box para todos los elementos */
+}
+
+
+header {
+    text-align: end;
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+    /* Estilos para el encabezado */
+}
+
+.nav {
+    position: fixed;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    transition: all 0.9s ease;
+    border-radius: 25px;
+    /* Estilos para la barra de navegación */
+}
+
+.menu {
+    display: flex;
+    /* Establece la visualización de los elementos del menú en línea */
+}
+
+.menu li {
+    list-style: none;
+    margin: 10px;
+    /* Estilos para los elementos de la lista del menú */
+}
+
+.menu li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    /* Estilos para los enlaces del menú */
+}
+
+.menu li a:hover {
+    background: #003DFF;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 6.5px;
+    /* Estilos para el hover de los enlaces del menú */
+}
+
+.logo {
+    font-size: 25px;
+    color: #000000;
+    font-weight: 100;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    /* Estilos para las secciones */
+}
+
+section h1 {
+    font-size: 3em;
+    /* Estilos para los encabezados h1 en las secciones */
+}
+
+section h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    /* Estilos para los encabezados h2 en las secciones */
+}
+
+section form {
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    /* Estilos para los formularios en las secciones */
+}
+
+section form label {
+    width: 100%;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+    /* Estilos para las etiquetas de los formularios */
+}
+
+section form input {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: #003DFF;
+    background-color: #eee;
+    /* Estilos para los campos de entrada de los formularios */
+}
+
+section form input[type='submit'] {
+    margin-top: 1.5em;
+    background-color: #003DFF;
+    color: #fff;
+    transition: var(--transition);
+    /* Estilos para los botones de envío de los formularios */
+}
+
+section form input[type='submit']:active {
+    transform: scale(0.97);
+    /* Estilos para el estado activo de los botones de envío de los formularios */
+}
+
+section p {
+    margin-top: 1.5em;
+    /* Estilos para los párrafos en las secciones */
+}
+
+section p a {
+    text-decoration: none;
+    color: #003DFF;
+    /* Estilos para los enlaces dentro de los párrafos en las secciones */
+}
