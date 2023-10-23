@@ -17,5 +17,5 @@ loginForm.addEventListener('submit', (e) => {
 
     alert(`Bienvenido ${validUser.name}`); // Muestra una alerta de bienvenida con el nombre del usuario válido
     localStorage.setItem('login_success', JSON.stringify(validUser)); // Almacena la información del usuario en el almacenamiento local
-    window.location.href = 'index.html'; // Redirige al usuario a la página principal
+    window.location.href = 'catalogo.html'; // Redirige al usuario a la página principal
 });

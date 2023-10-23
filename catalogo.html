@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- Link para fuentes personalizadas  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- Link para Css  -->
+   <link rel="stylesheet" href="/assets/css/catalogo.css">
+
+   <!-- Link para JS  -->
+   <script src="/assets/js/catalogo.js" defer></script>
+
+</head>
+<body>
+
+   <!-- Barra de navegación -->
+
+   <header>
+      <nav>
+        <div class="logo">compraYA!</div>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="/index.html">Desconectarse</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div class="scrol"></div>
+   
+  <!-- Contenedor de Telefonos y titulo -->
+   
+<div class="container">
+
+   <h3 class="title" > Catalogo Dispositivos Moviles </h3>
+
+   <!-- Telefonos, imagenes y precio -->
+
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="/assets/img/s21.jpg" alt="">
+         <h3>Samsung Galaxy S21</h3>
+         <div class="price">$550</div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="/assets/img/s20-note-ultra.jpg" alt="">
+         <h3>Samsung Galaxy Note 20 Ultra</h3>
+         <div class="price">$540</div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="/assets/img/a52.jpg" alt="">
+         <h3>Samsung Galaxy A52</h3>
+         <div class="price">$360</div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="/assets/img/ihpone-13.pro.png" alt="">
+         <h3>iPhone 13 Pro</h3>
+         <div class="price">$1300</div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="/assets/img/iphone12.jpg" alt="">
+         <h3>iPhone 12</h3>
+         <div class="price">$890</div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="/assets/img/iphoneSE.png" alt="">
+         <h3>iPhone SE (2020)</h3>
+         <div class="price">$205</div>
+      </div>
+
+      <div class="product" data-name="p-7">
+         <img src="/assets/img/pixel-6-pro.jpg" alt="">
+         <h3>Google Pixel 6 Pro</h3>
+         <div class="price">$380</div>
+      </div>
+
+      <div class="product" data-name="p-8">
+         <img src="/assets/img/pixel-5a.jpg" alt="">
+         <h3>Google Pixel 5a</h3>
+         <div class="price">$352</div>
+      </div>
+
+      <div class="product" data-name="p-9">
+         <img src="/assets/img/4a.jpg" alt="">
+         <h3>Google Pixel 4a</h3>
+         <div class="price">$320</div>
+      </div>
+
+      <div class="product" data-name="p-10">
+         <img src="/assets/img/mi11.pro.jpg" alt="">
+         <h3>Xiaomi Mi 11</h3>
+         <div class="price">$384</div>
+      </div>
+
+      <div class="product" data-name="p-11">
+         <img src="/assets/img/note-10-pro.jpg" alt="">
+         <h3>Xiaomi Note 10</h3>
+         <div class="price">$229</div>
+      </div>
+
+      <div class="product" data-name="p-12">
+         <img src="/assets/img/poco-x3-pro.jpg" alt="">
+         <h3>Xiaomi POCO X3 Pro</h3>
+         <div class="price">$168</div>
+      </div>
+
+   </div>
+
+</div>
+
+<!-- Preview de Productos al hacer click -->
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/s21.jpg" alt="">
+      <h3>Samsung Galaxy S21</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.2 pulgadas Dynamic AMOLED
+         Resolución: 1080 x 2400 píxeles
+         Procesador: Exynos 2100 / Qualcomm Snapdragon 888
+         Memoria RAM: 8 GB
+         Almacenamiento interno: 128 GB / 256 GB
+         Cámara principal: 12 MP + 12 MP + 64 MP
+         Cámara frontal: 10 MP
+         Batería: 4000 mAh</p>
+      <div class="price">$550</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/s20-note-ultra.jpg" alt="">
+      <h3>Samsung Galaxy Note 20 Ultra</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.9 pulgadas Dynamic AMOLED
+         Resolución: 1440 x 3088 píxeles
+         Procesador: Exynos 990 / Qualcomm Snapdragon 865+
+         Memoria RAM: 12 GB
+         Almacenamiento interno: 128 GB / 256 GB / 512 GB
+         Cámara principal: 108 MP + 12 MP + 12 MP
+         Cámara frontal: 10 MP
+         Batería: 4500 mAh</p>
+      <div class="price">$540</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/a52.jpg" alt="">
+      <h3>Samsung Galaxy A52</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.5 pulgadas Super AMOLED
+         Resolución: 1080 x 2400 píxeles
+         Procesador: Qualcomm Snapdragon 720G
+         Memoria RAM: 6 GB / 8 GB
+         Almacenamiento interno: 128 GB / 256 GB
+         Cámara principal: 64 MP + 12 MP + 5 MP + 5 MP
+         Cámara frontal: 32 MP
+         Batería: 4500 mAh</p>
+      <div class="price">$360</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/ihpone-13.pro.png" alt="">
+      <h3>iPhone 13 Pro</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.1 pulgadas Super Retina XDR OLED
+         Resolución: 1170 x 2532 píxeles
+         Procesador: Apple A15 Bionic
+         Memoria RAM: 6 GB
+         Almacenamiento interno: 128 GB / 256 GB / 512 GB / 1 TB
+         Cámara principal: 12 MP + 12 MP + 12 MP
+         Cámara frontal: 12 MP
+         Batería: 3095 mAh</p>
+      <div class="price">$1300</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/iphone12.jpg" alt="">
+      <h3>iPhone 12</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.1 pulgadas Super Retina XDR OLED
+         Resolución: 1170 x 2532 píxeles
+         Procesador: Apple A14 Bionic
+         Memoria RAM: 4 GB
+         Almacenamiento interno: 64 GB / 128 GB / 256 GB
+         Cámara principal: 12 MP + 12 MP + 12 MP
+         Cámara frontal: 12 MP
+         Batería: 2815 mAh</p>
+      <div class="price">$890</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/iphoneSE.png" alt="">
+      <h3>iPhone SE (2020)</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 4.7 pulgadas Retina IPS LCD
+         Resolución: 750 x 1334 píxeles
+         Procesador: Apple A13 Bionic
+         Memoria RAM: 3 GB
+         Almacenamiento interno: 64 GB / 128 GB / 256 GB
+         Cámara principal: 12 MP
+         Cámara frontal: 7 MP
+         Batería: 1821 mAh</p>
+      <div class="price">$205</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-7">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/pixel-6-pro.jpg" alt="">
+      <h3>Google Pixel 6 Pro</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.7 pulgadas OLED
+         Resolución: 1440 x 3120 píxeles
+         Procesador: Google Tensor
+         Memoria RAM: 12 GB
+         Almacenamiento interno: 128 GB / 256 GB / 512 GB
+         Cámara principal: 50 MP + 12 MP + 48 MP
+         Cámara frontal: 12 MP
+         Batería: 5000 mAh</p>
+      <div class="price">$380</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-8">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/pixel-5a.jpg" alt="">
+      <h3>Google Pixel 5a</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.34 pulgadas OLED
+         Resolución: 1080 x 2400 píxeles
+         Procesador: Qualcomm Snapdragon 765G
+         Memoria RAM: 6 GB
+         Almacenamiento interno: 128 GB
+         Cámara principal: 12.2 MP + 16 MP
+         Cámara frontal: 8 MP
+         Batería: 4680 mAh</p>
+      <div class="price">$352</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-9">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/4a.jpg" alt="">
+      <h3>Google Pixel 4a</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 5.81 pulgadas OLED
+         Resolución: 1080 x 2340 píxeles
+         Procesador: Qualcomm Snapdragon 730G
+         Memoria RAM: 6 GB
+         Almacenamiento interno: 128 GB
+         Cámara principal: 12.2 MP
+         Cámara frontal: 8 MP
+         Batería: 3140 mAh</p>
+      <div class="price">$320</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-10">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/mi11.pro.jpg" alt="">
+      <h3>Xiaomi Mi 11</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.81 pulgadas AMOLED
+         Resolución: 1440 x 3200 píxeles
+         Procesador: Qualcomm Snapdragon 888
+         Memoria RAM: 8 GB / 12 GB
+         Almacenamiento interno: 128 GB / 256 GB / 512 GB
+         Cámara principal: 108 MP + 13 MP + 5 MP
+         Cámara frontal: 20 MP
+         Batería: 4600 mAh</p>
+      <div class="price">$384</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-11">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/note-10-pro.jpg" alt="">
+      <h3>Xiaomi Redmi Note 10 Pro</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.67 pulgadas Super AMOLED
+         Resolución: 1080 x 2400 píxeles
+         Procesador: Qualcomm Snapdragon 732G
+         Memoria RAM: 6 GB / 8 GB
+         Almacenamiento interno: 64 GB / 128 GB
+         Cámara principal: 64 MP + 8 MP + 5 MP + 2 MP
+         Cámara frontal: 16 MP
+         Batería: 5020 mAh</p>
+      <div class="price">$229</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-12">
+      <i class="fas fa-times"></i>
+      <img src="/assets/img/poco-x3-pro.jpg" alt="">
+      <h3>Xiaomi Poco X3 Pro
+      </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Pantalla: 6.67 pulgadas IPS LCD
+         Resolución: 1080 x 2400 píxeles
+         Procesador: Qualcomm Snapdragon 860
+         Memoria RAM: 6 GB / 8 GB
+         Almacenamiento interno: 128 GB / 256 GB
+         Cámara principal: 48 MP + 8 MP + 2 MP + 2 MP
+         Cámara frontal: 20 MP
+         Batería: 5160 mAh</p>
+      <div class="price">$168</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   
+
+</div>
+
+</body>
+</html>
